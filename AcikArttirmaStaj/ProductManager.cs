@@ -26,11 +26,7 @@ namespace AcikArttirmaStaj
         {
             return products;
         }
-
-        public void GiveOffer(Product product)
-        {
-            Product productToUpdate = products.FirstOrDefault(p => p.Id == product.Id);
-            productToUpdate.LastOffer = product.LastOffer;
-        }
+        
+        public void 
     }
 }

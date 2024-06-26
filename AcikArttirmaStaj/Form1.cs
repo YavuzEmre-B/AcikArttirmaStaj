@@ -8,7 +8,7 @@ namespace AcikArttirmaStaj
         }
 
         ProductManager productManager = new ProductManager();
-        Product product = new Product();
+        public int[] bestPrices;
         private void Form1_Load(object sender, EventArgs e)
         {
             dgrwProductList.DataSource = productManager.GetAll();
@@ -17,7 +17,7 @@ namespace AcikArttirmaStaj
 
         private void btnGiveOffer_Click(object sender, EventArgs e)
         {
-
+            
             dgrwProductList.DataSource = null;
             dgrwProductList.DataSource = productManager.GetAll();
         }
