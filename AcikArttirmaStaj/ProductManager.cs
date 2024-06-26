@@ -9,7 +9,6 @@ namespace AcikArttirmaStaj
     internal class ProductManager
     {
         List<Product> products;
-
         public ProductManager()
         {
             products = new List<Product>() 
@@ -27,6 +26,5 @@ namespace AcikArttirmaStaj
             return products;
         }
         
-        public void 
     }
 }
